@@ -64,4 +64,14 @@ public class Lista {
     
     corrente.proximo = new Node (Item, cauda);
   }
+	
+	public static int contador(){
+	Node corrente = cabeca;
+		int quantidade = 0;
+		while (corrente != null){
+		quantidade++;
+			corrente = corrente.proximo;
+		}
+		return quantidade;
+	}
 }
