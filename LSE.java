@@ -22,6 +22,8 @@ public class LSE {
         l.inserePenultimo(20);
         l.imprime();
         
+        System.out.print("quantidade de nos " +l.contador());
+        
         
     } 
 }
