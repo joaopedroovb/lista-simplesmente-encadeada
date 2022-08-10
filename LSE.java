@@ -16,7 +16,7 @@ public class Lse {
         l.insereFim(10);
         l.imprime();
  
-        System.out.print("Item  removido " +l.removeSegundo());
+        System.out.println("Item  removido " +l.removeSegundo());
         l.imprime();
            
     } 
