@@ -1,3 +1,5 @@
+
+
 package lse;
 
 public class Lista {
@@ -74,4 +76,43 @@ public class Lista {
 		}
 		return quantidade;
 	}
+        
+        public static int removeInicio(){
+    int removeItem = 0;
+    if (cabeca == null){
+      System.out.println("Lista Vazia");
+      System.exit(0);
+    }
+
+    removeItem = cabeca.info;
+
+    if (cabeca == cauda)
+      cabeca = cauda = null;
+    else
+      cabeca = cabeca.proximo;
+
+    return removeItem;
+  }
+
+        
+        public static int removeFim(){
+    int removeItem = 0;
+    if (cabeca == null){
+      System.out.println("Lista Vazia");   
+      System.exit(0);    }
+
+    removeItem = cauda.info;
+
+    if (cabeca == cauda)
+      cabeca = cauda = null;
+    else{
+      Node corrente = cabeca;
+      while (corrente.proximo != cauda)
+	corrente = corrente.proximo;
+      cauda = corrente;
+      corrente.proximo = null;
+    }
+    return removeItem;
+  }
+
 }
