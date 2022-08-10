@@ -132,5 +132,16 @@ public class Lista {
                 }
                 return itemRemovido;
             }
+        
+        public static boolean pesquisa(int procurado){
+            Node corrente = cabeca;
+            while (corrente != null){
+                if (corrente.info == procurado)
+                    return true;
+                else 
+                    corrente = corrente.proximo; //percorrer Importantissima
+            }
+            return false;
+        }
             
         }
