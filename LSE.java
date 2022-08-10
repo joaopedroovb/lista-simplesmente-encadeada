@@ -1,9 +1,12 @@
 package lse;
 
-public class LSE {
+public class Lse {
 
     public static void main(String[] args) {
         Lista l = new Lista();
+        l.insereInicio(8);
+        l.imprime();
+        
         l.insereInicio(5);
         l.imprime();
         
@@ -12,18 +15,9 @@ public class LSE {
         
         l.insereFim(10);
         l.imprime();
-        
-        l.inserePescoco(8);
+ 
+        System.out.print("Item  removido " +l.removeSegundo());
         l.imprime();
-        
-        l.inserePertoDoFim(11);
-        l.imprime();
-        
-        l.inserePenultimo(20);
-        l.imprime();
-        
-        System.out.print("quantidade de nos " +l.contador());
-        
-        
+           
     } 
 }
