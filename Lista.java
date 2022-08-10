@@ -114,5 +114,23 @@ public class Lista {
     }
     return removeItem;
   }
-
-}
+        
+        public static int removeSegundo(){
+            int itemRemovido = 0;
+            if (cabeca == null){
+                System.out.println("Lista Vazia");
+                System.exit(0); 
+            }
+                
+                if (cabeca == cauda){
+                    itemRemovido = cabeca.info;
+                    cabeca = cauda = null;
+                }
+                else {
+                itemRemovido = cabeca.proximo.info;
+                cabeca.proximo = cabeca.proximo.proximo;
+                }
+                return itemRemovido;
+            }
+            
+        }
